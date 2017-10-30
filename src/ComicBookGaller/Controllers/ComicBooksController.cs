@@ -22,7 +22,7 @@ namespace ComicBookGaller.Controllers
                     new Artist() { Name = "Victor Olazaba", Role = "Inks" },
                     new Artist() { Name = "Edgar Delgado", Role = "Colors" },
                     new Artist() { Name = "Chris Eliopoulos", Role = "Letters" },
-                }
+                },
             };
 
             return View(comicBook);
