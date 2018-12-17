@@ -59,24 +59,8 @@ namespace ComicBookGallery.Data
             }
         };
 
-        public ComicBook GetComicBook(int id)
-        {
-            ComicBook comicBookToReturn = null;
+        public ComicBook GetComicBook(int id) =>_comicBooks.FirstOrDefault(x => x.ID == id);
 
-            foreach (var cb in _comicBooks)
-            {
-                if (cb.ID == id)
-                {
-                    comicBookToReturn = cb;
-                }
-            }
-
-            return comicBookToReturn;
-        }
-
-        public ComicBook[] GetComicBooks()
-        {
-            return _comicBooks;
-        }
+        public ComicBook[] GetComicBooks() => _comicBooks;
     }
 }
